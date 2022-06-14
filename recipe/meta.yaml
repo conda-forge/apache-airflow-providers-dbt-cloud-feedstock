@@ -21,13 +21,13 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - apache-airflow >=2.1.0
+    - apache-airflow >=2.2.0
     - apache-airflow-providers-http
 
 test:
   imports:
     - airflow.providers.dbt.cloud
-    - airflow.providers.dbt.cloud.example_dags
+    - airflow.providers.dbt.cloud.hooks
   commands:
     - pip check
   requires:
