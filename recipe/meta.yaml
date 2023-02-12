@@ -21,8 +21,10 @@ requirements:
     - pip
   run:
     - python >=3.7
+    - aiohttp
     - apache-airflow-providers-http
     - apache-airflow >=2.3.0
+    - asgiref
 
 test:
   imports:
