@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-dbt-cloud" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-dbt-cloud-{{ version }}.tar.gz
-  sha256: cfccef9940e89a8544d3ab26055c0e320f4aa0a1cae051d32d8a7d98f64a996a
+  sha256: 31928de0637fcff287a0c0795a7cf88066ad01b4bdde76a98b2326b5a39ae589
 
 build:
   noarch: python
