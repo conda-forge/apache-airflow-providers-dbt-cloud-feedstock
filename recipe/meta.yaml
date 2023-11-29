@@ -28,7 +28,7 @@ requirements:
 
 test:
   imports:
-    - apache_airflow_providers_dbt_cloud
+    - airflow.providers.dbt.cloud
   commands:
     - pip check
   requires:
