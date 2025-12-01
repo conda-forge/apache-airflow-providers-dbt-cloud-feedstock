@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-dbt-cloud" %}
-{% set version = "4.5.0" %}
+{% set version = "4.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_dbt_cloud-{{ version }}.tar.gz
-  sha256: a4b095c338abe2fd41313b21afe163bbaf1205b03e5b1dcf0b577574d1a2916d
+  sha256: a0fc0327f60433a237dd5ea985aa99bc2098c67df344f624e7462ef0b26d0bde
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - apache-airflow >=2.10.0
+    - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
     - apache-airflow-providers-http
     - asgiref >=2.3.0
@@ -42,7 +42,7 @@ about:
   home: https://airflow.apache.org/
   summary: Provider package apache-airflow-providers-dbt-cloud for Apache Airflow
   license: Apache-2.0
-  license_file: 
+  license_file:
     - LICENSE
     - NOTICE
   license_family: Apache
