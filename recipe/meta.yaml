@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-dbt-cloud" %}
 {% set version = "4.6.0" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -39,7 +38,7 @@ test:
     - pip
 
 about:
-  home: https://airflow.apache.org/
+  home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-dbt-cloud for Apache Airflow
   license: Apache-2.0
   license_file:
