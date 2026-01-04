@@ -32,7 +32,7 @@ requirements:
 tests:
   - python:
       imports:
-        - airflow.providers.dbt.cloud
+      - airflow.providers.dbt.cloud
       pip_check: true
       python_version: ${{ python_min }}.*
 
