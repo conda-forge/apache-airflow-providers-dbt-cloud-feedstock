@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-dbt-cloud
-  version: "4.6.2"
+  version: 4.6.3
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_dbt_cloud-${{ version }}.tar.gz
-  sha256: 8cf64dc4afccd7a568fdb6d0b99e0c33485fa35bb2d433a14cd0e7eb5eca4e72
+  sha256: 2b2d1f27c3e2dfc2fd71605db050650654e6278a0196f169fbae9b011dc55ea6
 
 build:
   noarch: python
@@ -23,16 +23,15 @@ requirements:
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
-    - apache-airflow-providers-common-compat >=1.10.1
+    - apache-airflow-providers-common-compat >=1.12.0
     - apache-airflow-providers-http
     - asgiref >=2.3.0
     - aiohttp >=3.9.2
     - tenacity >=8.3.0
-
 tests:
   - python:
       imports:
-      - airflow.providers.dbt.cloud
+        - airflow.providers.dbt.cloud
       pip_check: true
       python_version: ${{ python_min }}.*
 
