@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-dbt-cloud
-  version: 4.11.0
+  version: "4.11.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_dbt_cloud-${{ version }}.tar.gz
-  sha256: 77edb4e2d3ef9b1be98bcbe8c62bf43db740b3b310e247ade966d57e9448b4a1
+  sha256: 6d53855a407aa80fc888a46602154b44f48ab38dcdf2c0fa932d9ead3e45e3fa
 
 build:
   noarch: python
